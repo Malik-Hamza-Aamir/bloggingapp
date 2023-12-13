@@ -21,10 +21,10 @@ const Navbar = () => {
             <div>
                 {
                     navlinks.map((links: NavLinks, index: number) => (
-                        <Link key={index} href={links.url}>{links.name}</Link>
+                        <Link key={index} href={links.url} className="mx-2" >{links.name}</Link>
                     ))
                 }
-                <Link href="/" className="border-2 border-white rounded-lg p-[0.75rem]">Get Started</Link>
+                <Link href="/" className="border-2 border-white rounded-lg p-[0.75rem] ml-2">Get Started</Link>
             </div>
 
         </nav>
